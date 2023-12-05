@@ -303,7 +303,7 @@ footer form h2 {color: #02033b;  font-size: 23px;  line-height: 30px;  letter-sp
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  text-indent: -999px;
+  text-indent: -9999px;
   border-radius:2px;
   }
 
