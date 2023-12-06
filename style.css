@@ -12,6 +12,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 main {
   overflow: hidden;
+  max-width: 1440px;
 }
 
 ol,ul {
@@ -34,11 +35,10 @@ header {
   position: fixed;
   background: #f3f8ff;
   height: 102px;
-  padding: 24px 50px;
+  /* padding: 24px 120px; */
   background: #f3f8ff;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   z-index: 2;
-  justify-content: center;
 }
 footer {
   display: flex;
@@ -56,10 +56,11 @@ section {
   overflow: hidden;
   display: flex;
   align-items: center;
-  padding: 30px 120px;
+  /* padding: 30px 120px; */
 }
 section:first-child {
   padding-top: 100px;
+  padding-left: 100px;
   position: relative;
 }
 .column {
@@ -69,9 +70,10 @@ section:first-child {
 header,
 section,
 footer {
-  max-width: 1440px;
-  /* display: flex; */
   margin: 0 auto;
+  display: flex;
+  max-width: 1440px;
+  justify-content: center;
 }
 
 h1 {
@@ -256,6 +258,7 @@ submit-section input[type="submit"]:hover{background:gray;}
   display: flex;
   justify-content: center;
   align-items: center;
+  /* max-width: 1200px; */
 }
 
 
@@ -333,7 +336,7 @@ box-shadow: 0px 0px 14px 1px rgba(255,252,250,1); border :1px solid :#fff;}
   list-style: none;
   height: 100%;
   color: #02033b;
-  margin: 0 48px 0 0;
+  margin: 0 48px;
 }
 .menu li {
   color: #02033b;
@@ -505,13 +508,13 @@ header + section {
 }
 
 div.intro-text {
-  width: 633.5px;
+  max-width: 633.5px;
   height: 461.25px;
   display: flex;
   flex-direction: column;
-  gap: 58px;
+  gap: 52px;
   justify-content: center;
-  padding: 12px 0 30px 0;
+  padding: 12px 0 30px 15px;
   z-index: 1;
 }
 
@@ -832,7 +835,8 @@ ul.secondary-menu li {
 
 .footer-container {
   display: inline-flex;
-  min-width: 1056px;
+  max-width: 1056px;
+  width: 100%;
   align-items: flex-start;
   justify-content: space-between;
 }
@@ -959,7 +963,7 @@ footer .text-conteiner {
 
 @media screen and (max-width: 1400px) {
 	  header {
-		/* padding: 24px 120px; */
+		padding: 24px 120px;
 		}
 }
 
@@ -1111,11 +1115,24 @@ footer .text-conteiner {
     padding: 10px;
     height: 50px;
   }
-}
-@media screen and (max-width: 750px) {
-  section.intro .intro-image {
+    section.intro .intro-image {
     display: none;
   }
+    section.intro .intro-image {
+    display: none;
+  }
+  section:first-child{padding:130px 50px 50px 50px}}
+
+
+@media screen and (max-width: 850px){
+.insights a {
+flex-direction: row;}
+.image-container {
+    padding: 0; margin-top:50px;
+}
+}
+@media screen and (max-width: 750px) {
+
   div.intro-text {
     margin-top: 50px;
   }
@@ -1144,9 +1161,12 @@ footer .text-conteiner {
     text-align: justify;
   }
   .orange-section h2{margin:auto; padding:0 0 0 50px;}
+  header{padding:0 50px;}
 
 }
   @media screen and (max-width: 480px) {
+	  header div.main{gap:20px;}
+	  nav{gap:20px;}
     ul.footer-menu {
       flex-direction: column;
       align-items: flex-start;
